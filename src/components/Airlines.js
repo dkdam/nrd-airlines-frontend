@@ -1,12 +1,17 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react";
+import Login from "./Login";
+import Search from "./Search";
 
 class Airlines extends Component {
     render() {
         return(
             <div>
+                <h1> ಥ_ಥ Burning Airlines coming soon  ಥ_ಥ</h1>
+                <marquee behavior="" direction="right">
+                <Login />
+                </marquee>
                 <marquee>
-                    <h1>Burning Airlines coming soon</h1>
+                    <Search />
                 </marquee>
             </div>
         )

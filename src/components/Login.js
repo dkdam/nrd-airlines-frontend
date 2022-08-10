@@ -10,6 +10,9 @@ class Login extends Component {
     }
     
     _handleSubmit = (e) => {
+        this.props.onSubmit(this.state);
+        console.log(this.state.email)
+        console.log(this.state.password)
         e.preventDefault();
         
     }
@@ -35,7 +38,7 @@ class Login extends Component {
                         <label htmlFor="password">Password:</label>
                         <input type="password" required onChange={ this._inputPassword }/>
                     </div>
-                        <input type="submit" value='LOGIN'/>
+                        <input type="submit" value='Log In'/>
                 </div>
             </form>
             

@@ -36,7 +36,7 @@ function App() {
     <Routes>
       <Route path="/airlines" element={<Airlines />}/>
       <Route path="/flight" element={<Flight />} />
-      <Route path="/Login" element ={<Login />} />
+      <Route path="/Login" element ={<Login onSubmit={Log_in}/>} />
     </Routes>
 {/* 
     <div className="App">

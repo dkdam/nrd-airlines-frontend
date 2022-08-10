@@ -1,15 +1,35 @@
 // This is for the airplane page where you are able to book seats
 
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react';
+import axios from "axios";
+
+const SERVER_URL = "http://localhost:3000/flights.json";
 
 class Flight extends Component {
+    constructor() {
+        super();
+        this.state ={
+            info:''
+        };
+    }
+    fetchInfo(q) {
+        console.log(`Search for ${q}`)
+        axios(SERVER_URL).then((results) => {
+            console.log(results)
+        })
+    }
+   
+
     render() {
         return (
             <div>
 
                 <div className="information">
                     <h1>Info</h1>
+                    <h2>Date: </h2>
+                    {this.props.flight.date}
                 </div>
+
 
                 <div className="bookingButton">
                     <button>Book Now</button>

@@ -3,6 +3,7 @@ import FlightList from "./FlightList";
 import SearchForm from "./SearchForm";
 import axios from "axios";
 
+
 class Search extends Component {
     
     fetchInfo(q) {
@@ -10,7 +11,6 @@ class Search extends Component {
         const SERVER_URL = "http://localhost:3000/flights.json"
         axios(SERVER_URL).then((results) => {
             console.log(results)
-            debugger
         })
     }
     

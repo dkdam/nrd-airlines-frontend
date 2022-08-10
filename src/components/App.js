@@ -11,7 +11,7 @@ function App() {
       password: 'chicken'
     }
 
-    const [user, setUser] = useState({name:'', email:''});
+    const [user, setUser] = useState({password:'', email:''});
     const [error, setError] = useState('');
 
     const Log_in = details => {
@@ -38,7 +38,7 @@ function App() {
       <Route path="/flight" element={<Flight />} />
       <Route path="/Login" element ={<Login />} />
     </Routes>
-
+{/* 
     <div className="App">
       {(user.email !='') ? (
         <div className="welcome">
@@ -48,7 +48,7 @@ function App() {
       ) : (
         <Login Log_in={ Log_in } error={ error }/>
       )}
-    </div>
+    </div> */}
     </div>
   );
 }

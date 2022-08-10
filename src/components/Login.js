@@ -3,8 +3,9 @@ import React, { Component } from "react";
 class Login extends Component {
     constructor() {
         super();
-        this.state = { name: '', email:'', password:''};
-        this._handleInput = this._handleInput.bind(this)
+        this.state = { email:'', password:''};
+        this._inputEmail  = this._inputEmail.bind(this)
+        this._inputPassword  = this._inputPassword.bind(this)
         this._handleSubmit = this._handleSubmit.bind(this)
     }
     
@@ -13,10 +14,12 @@ class Login extends Component {
         
     }
 
-    _handleInput = (e) => {
-        this.setState( {content: e.target.value} )
+    _inputEmail = (e) => {
+        this.setState( {email: e.target.value} )
     }
-
+    _inputPassword = (e) => {
+        this.setState( {password: e.target.value} )
+    }
 
     render()  {
         return(
@@ -25,16 +28,12 @@ class Login extends Component {
                     <h2>Login</h2>
                     { /* Error */ }
                     <div>
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" name='name' id='name' />
-                    </div>
-                    <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" name='email' id='email' />
+                        <input type="email" required onChange={ this._inputEmail }  />
                     </div>
                     <div>
                         <label htmlFor="password">Password:</label>
-                        <input type="password" name='password' id='password' />
+                        <input type="password" required onChange={ this._inputPassword }/>
                     </div>
                         <input type="submit" value='LOGIN'/>
                 </div>

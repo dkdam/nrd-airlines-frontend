@@ -24,6 +24,7 @@ class SearchForm extends Component {
                 <form onSubmit= { this._handleSubmit }>
                     <input type="search" placeholder="Origin" onInput={ this._handleInput }/>
                     <input type="search" placeholder="Destination" onInput={ this._handleInput }/>
+                    <input type="search" placeholder="Date" onInput={ this._handleInput } />
                     <input type="submit" value={`Search Flight`}/>
                 </form>
             </div>

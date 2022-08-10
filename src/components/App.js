@@ -1,4 +1,6 @@
 import Airlines from "./Airlines";
+import Login from "./Login";
+import Flight from "./Flight";
 import { Link, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -8,10 +10,17 @@ function App() {
       <Link to="/">Home</Link>
       ||
       <Link to="/airlines">Airlines</Link>
+      ||
+      <Link to="/flight">Flight</Link>
+      ||
+      <Link to="/Login">Login</Link>
     </nav>
     <h1>Nothing to see here apparently</h1>
     <Routes>
       <Route path="/airlines" element={<Airlines />}/>
+      <Route path="/flight" element={<Flight />} />
+      <Route path="/Login" element ={<Login />} />
+
     </Routes>
   </div>
   );

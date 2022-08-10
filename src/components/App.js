@@ -15,7 +15,7 @@ function App() {
       ||
       <Link to="/Login">Login</Link>
     </nav>
-    <h1>Nothing to see here apparently</h1>
+    <h1>ಥ_ಥ Nothing to see here apparently ಥ_ಥ</h1>
     <Routes>
       <Route path="/airlines" element={<Airlines />}/>
       <Route path="/flight" element={<Flight />} />

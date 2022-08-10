@@ -9,7 +9,6 @@ class Airlines extends Component {
     render() {
         return(
             <div>
-                <h1> ಥ_ಥ Burning Airlines coming soon  ಥ_ಥ</h1>
                 < Search />
             </div>
         )

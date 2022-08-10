@@ -1,13 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
+import axios from "axios";
 
-class FlightList extends Component {
-    render() {
-        return(
-            <div>
-                <h1>Flight Search Results</h1>
-            </div>
-        )
-    }
+const SERVER_URL = "http://localhost:3000/flights"
+axios(SERVER_URL).then((results) => {
+    console.log(results)
+})
+
+const FlightList = (props) => {
+    return (
+        <div>
+            <h3>Flight List</h3>
+            
+        </div>
+    )
 }
 
 export default FlightList

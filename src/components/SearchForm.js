@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class SearchForm extends Component {
     constructor() {
         super();
@@ -20,7 +21,7 @@ class SearchForm extends Component {
     render() {
         return(
             <div>
-                <h1>Searching Flight</h1>
+                <h3>Searching Flight</h3>
                 <form onSubmit= { this._handleSubmit }>
                     <input type="search" placeholder="Origin" onInput={ this._handleInput }/>
                     <input type="search" placeholder="Destination" onInput={ this._handleInput }/>
@@ -32,6 +33,8 @@ class SearchForm extends Component {
 
     }
 }
+
+
 
 export default SearchForm;
 

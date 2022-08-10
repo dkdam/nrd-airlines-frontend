@@ -4,7 +4,7 @@ class FlightList extends Component {
     render() {
         return(
             <div>
-                <h1>List of pain (╯°□°）╯︵ ┻━┻ </h1>
+                <h1>Flight Search Results</h1>
             </div>
         )
     }

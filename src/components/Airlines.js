@@ -7,12 +7,8 @@ class Airlines extends Component {
         return(
             <div>
                 <h1> ಥ_ಥ Burning Airlines coming soon  ಥ_ಥ</h1>
-                <marquee behavior="" direction="right">
                 <Login />
-                </marquee>
-                <marquee>
-                    <Search />
-                </marquee>
+                <Search />
             </div>
         )
     }

@@ -9,9 +9,11 @@ axios(SERVER_URL).then((results) => {
 const FlightList = (props) => {
     return (
         <div>
+            <br/>
+            <br/>
             <h3>Flight List</h3>
             {Object.keys(props.flights).map((key) => {
-                return <p>{key}: {props.flights[key]}</p>
+                return <td className="table_row">{key}: {props.flights[key]}</td>
             })}
         </div>
     )

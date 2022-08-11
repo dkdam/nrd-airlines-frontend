@@ -26,7 +26,7 @@ class Login extends Component {
 
     render()  {
         return(
-            <form onSubmit={ this._handleSubmit }>
+            <form onSubmit={ this._handleSubmit } className="userbody" id="flightinfo">
                 <div>
                     <h2>Login</h2>
                     { /* Error */ }

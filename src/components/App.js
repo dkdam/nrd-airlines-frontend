@@ -25,6 +25,7 @@ function App() {
       console.log('Logout')
     }
 
+
   return (
   <div>
     <nav>
@@ -36,12 +37,15 @@ function App() {
       ||
       <Link to="/Login">Login</Link>
     </nav>
-    <h1>ಥ_ಥ Nothing to see here apparently ಥ_ಥ</h1>
     <Routes>
       <Route path="/airlines" element={<Airlines />}/>
       <Route path="/flight" element={<Flight flight={dummyFlight} />} /> {/* REPLACE WITH ACTUAL FLIGHT*/}
       <Route path="/Login" element ={<Login onSubmit={Log_in}/>} />
     </Routes>
+    <h1 className="welcome">ಥ_ಥ Welcome to the burning airlines ಥ_ಥ</h1>
+    <div className="userbody" id="flightinfo">
+    <img src="https://media.giphy.com/media/3o6ZsZvWSd9slOSvpC/giphy.gif"></img>
+  </div>
 {/* 
     <div className="App">
       {(user.email !='') ? (

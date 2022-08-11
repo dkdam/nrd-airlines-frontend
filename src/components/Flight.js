@@ -18,11 +18,10 @@ class Flight extends Component {
             console.log(results)
         })
     }
-   
 
     render() {
         return (
-            <div>
+            <div className="userbody" id="flightinfo" >
 
                 <div className="information">
                     <h1>Info</h1>

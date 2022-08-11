@@ -8,7 +8,7 @@ import { Link, Route, Routes } from "react-router-dom";
 class Airlines extends Component {
     render() {
         return(
-            <div>
+            <div className="userbody" id="flightinfo" >
                 < Search />
             </div>
         )
